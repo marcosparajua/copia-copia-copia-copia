@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mímesis</title>
+    <meta name="description" content="">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+<body>
+
+   <a-scene>
+
+ 
+        <a-assets>
+            <img   id="sky" src="assets\sky.jpg">
+             <video id="shoot" src="assets\Horses.mp4" autoplay loop="true"></video>
+            <a-asset-item id="grass" src="assets\grass.gltf"></a-asset-item>
+        </a-assets>
+    
+        <a-videosphere src="#sky" rotation="3 12 -30"></a-videosphere>
+ 
+    
+    <a-video src="#shoot" width="10" height="10" color="" position="-32 26 -30"shadow rotation="8 0 0"></a-video>
+    <a-video src="#shoot" width="10" height="10" color="" position="-37 26 -14"shadowrotation="0 17 10" ></a-video>
+    <a-video src="#shoot" width="10" height="10" color="" position="-36 26 -30"shadow rotation="0 5 -20"></a-video>
+    <a-video src="#shoot" width="10" height="10" color="" position="-35 13 -17"shadow rotation="-5 -13 0"></a-video>
+    <a-video src="#shoot" width="10" height="10" color="" position="-29 15 -56"shadow></a-video>
+    <a-video src="#shoot" width="10" height="10" color="" position="-13 12 -64"shadow></a-video>
+    
+    
+   
+
+          <a-entity static-body gltf-model="#grass" scale ="5 7 5"position="-35 -15 -38"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 100000"></a-entity>
+
+
+</a-scene>
+</body>
+
+</html>
